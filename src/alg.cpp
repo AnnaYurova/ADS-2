@@ -49,7 +49,7 @@ double cosn(double x, uint16_t count) {
   double e = 0;
   uint64_t check = 1;
     while (check <= count) {
-      e += pown (-1, check - 1) * calcItem (x, (2 * check) - 2) ;
+      e += pown (-1, check - 1) * calcItem (x, (2 * check) - 2);
       check += 1;
     }
   return  e;
