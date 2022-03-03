@@ -32,7 +32,7 @@ double expn(double x, uint16_t count) {
   uint64_t i = 0;
     while (i <= count) {
       e += calcItem(x, i);
-      check += 1;
+      i += 1;
     }
   return  e;
 }
@@ -50,7 +50,7 @@ double cosn(double x, uint16_t count) {
   uint64_t i = 1;
     while (i <= count) {
       e += pown(-1, i - 1) * calcItem(x, (2 * i) - 2);
-      check += 1;
+      i += 1;
     }
   return  e;
 }
