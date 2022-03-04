@@ -4,7 +4,7 @@
 
 
 double pown(double value, uint16_t n) {
-  int tmp = value;
+  double tmp = value;
   if (n == 0) {
     return 1;
   }
@@ -44,7 +44,7 @@ double sinn(double x, uint16_t count) {
 }
 
 double cosn(double x, uint16_t count) {
-  double e = 1;
+  double e = 0;
   for (uint16_t i = 1; i <= count; i++) {
      e += pown(-1, i - 1) * pown(x, 2 * i - 2) / fact(2 * i - 2);
     }
